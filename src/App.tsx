@@ -137,7 +137,7 @@ const App: Component = () => {
 
     <SolidMarkdown class="prose" remarkPlugins={[remarkGfm]}>
       {markdown}
-    </SolidMarkdow>
+    </SolidMarkdown>
     // <SolidMarkdown class="prose" remarkPlugins={[]}>
     // {markdown}
     // </SolidMarkdown>
