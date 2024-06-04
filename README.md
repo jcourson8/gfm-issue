@@ -1,34 +1,28 @@
-## Usage
+# solid-markdown remarkGfm Issue
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+This repository demonstrates an issue with using the `remarkGfm` plugin with the `solid-markdown` library.
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+## Steps to Reproduce
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+1. Clone this repository.
+2. Install the dependencies by running `npm install` or `yarn install`.
+3. Run the development server using `npm run dev` or `yarn dev`.
+4. Open the browser and observe the console error.
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## Expected Behavior
 
-## Available Scripts
+The markdown should be rendered correctly with GitHub Flavored Markdown support.
 
-In the project directory, you can run:
+## Actual Behavior
 
-### `npm run dev` or `npm start`
+An error is thrown in the console when the `remarkGfm` plugin is included in the `remarkPlugins` prop of the `SolidMarkdown` component.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Environment
 
-The page will reload if you make edits.<br>
+- solid-markdown version: 2.0.13
+- remark-gfm version: 4.0.0
+- SolidJS version: 1.4.7
 
-### `npm run build`
+## Additional Information
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+The issue occurs specifically when using the `remarkGfm` plugin with `solid-markdown`. Removing the plugin resolves the error but loses the GitHub Flavored Markdown functionality.
