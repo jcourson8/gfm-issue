@@ -135,12 +135,12 @@ const App: Component = () => {
 
   return (
 
-    // <SolidMarkdown class="prose" remarkPlugins={[remarkGfm]}>
-    //   {markdown}
-    // </SolidMarkdow>
-    <SolidMarkdown class="prose" remarkPlugins={[]}>
-    {markdown}
-    </SolidMarkdown>
+    <SolidMarkdown class="prose" remarkPlugins={[remarkGfm]}>
+      {markdown}
+    </SolidMarkdow>
+    // <SolidMarkdown class="prose" remarkPlugins={[]}>
+    // {markdown}
+    // </SolidMarkdown>
   );
 };
 
